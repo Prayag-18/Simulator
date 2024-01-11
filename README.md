@@ -46,7 +46,6 @@ To simulate the execution of binary instructions, follow these steps:
 
 <h2>Example</h2>
 Here's an example code snippet that demonstrates how to use the binary instruction simulator:
-
 # Define the binary instructions
     0b0000000000101011,  # add R1, R2, R3
     0b0000100100101011,  # rs R2, $4
