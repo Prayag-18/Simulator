@@ -25,3 +25,31 @@ The ISA supports a 16-bit architecture with the following instructions and opcod
 - Jump If Greater Than (jgt mem_addr)
 - Jump If Equal (je mem_addr)
 - Halt (hlt)
+The ISA includes 7 general-purpose registers (R0 to R6) and 1 flag register (FLAGS). Each register is 16 bits in size.
+
+<h2>Usage</h2>
+
+To simulate the execution of binary instructions, follow these steps:
+
+  1. Define the binary instructions in a list, where each element represents a 16-bit instruction.
+     
+  2. Create an instance of the BinaryInstructionSimulator class by passing the binary instructions list as an argument.
+     
+  3. Call the simulate() method on the simulator instance to execute the instructions.
+   
+  4. After simulation, you can access the current state of registers and flags using the registers and flags attributes of the simulator instance.
+
+<h2>Simulate the execution of instructions</h2>
+  1. python3 Simulator.py
+  2. enter all the instructions line by line
+  3. press Ctrl+Z to get the output
+
+<h2>Example</h2>
+Here's an example code snippet that demonstrates how to use the binary instruction simulator:
+
+# Define the binary instructions
+    0b0000000000101011,  # add R1, R2, R3
+    0b0000100100101011,  # rs R2, $4
+    0b0010000000110010,  # ld R0, 1100100
+    0b1001000000000100   # jlt 00000100
+
